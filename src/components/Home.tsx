@@ -16,16 +16,18 @@ function Home() {
             let arr : item[] = res.array;
             setList(arr);
         })
-    }, [])
+    }, []);
     return (
         <div className="home">
             {list.map((item) => {
-                <Card
-                    title={item.title}
-                    text={item.text}
-                    num={item.num}
-                    img={item.img}
-                ></Card>
+                return(
+                    <Card
+                        title={item.title}
+                        text={item.text}
+                        num={item.num}
+                        img={item.img}
+                    ></Card>
+                )
             })}
         </div>
     );
