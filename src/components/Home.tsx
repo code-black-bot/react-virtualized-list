@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import Card from './Card';
 import getMockList from '../api/mock';
+import { InfiniteLoader, List } from 'react-virtualized';
+import 'react-virtualized/styles.css';
+
 
 interface item {
     title: string,
